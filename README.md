@@ -35,10 +35,10 @@ bir dil olmasını sağlayan Java Virtual Machine'in  anlayacağı bytecode'lara
 mevcuttur. Derlenmiş java kodlarıyla platform arasında bir katman oluşturur ve aynı bytecode'ların farklı platformlarda değişmeden,
 aynı şekilde çalışmasını sağlar.
 
-`.java  ->  compiler (javac)  ->  .class (bytecode)  
-    - .class (bytecode) -> Linux interpreter    -> Linux platform
-    - .class (bytecode) -> Windows interpreter  -> Windows platform
-    - .class (bytecode) -> Android interpreter  -> Android platform`
+`.java  ->  compiler (javac)  ->  .class (bytecode)  <br>
+    - .class (bytecode) -> Linux interpreter    -> Linux platform <br>
+    - .class (bytecode) -> Windows interpreter  -> Windows platform <br>
+    - .class (bytecode) -> Android interpreter  -> Android platform` <br>
 
 
 ### Java Çok Kanallıdır
