@@ -1,6 +1,5 @@
 package oopIntro;
 
-
 /**
  * 
  * @author Ahmet İZGİ
@@ -10,7 +9,6 @@ package oopIntro;
  *
  */
  
-
 public class Product {
 	// encapsulation
 	private int id;
@@ -115,8 +113,4 @@ public class Product {
 		this.discount = discount; 
 		
 	}
-	
-	
-
-	
 }

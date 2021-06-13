@@ -13,7 +13,7 @@ public class Main {
 		
 		System.out.println(product1.getUnitPriceAfterDiscount());
 		
-		// Yap�c� blok kullarak product1.id = 1 �eklinde atama yapmam�za gerek kalmaz
+		// Yapıcı blok kullarak product1.id = 1 şeklinde atama yapmamıza gerek kalmaz
 		/*
 		Product product1 = new Product();
 		product1.id = 1;
