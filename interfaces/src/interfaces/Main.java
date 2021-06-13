@@ -9,7 +9,7 @@ public class Main {
 		// loglama yapacağız dendiğinde aşağıdaki satırı
 		// new CustomerManager(new FileLogger()); 
 		// ile değiştirmemiz yeterli olacaktır.
-		//CustomerManager customerManager = new CustomerManager(new SmsLogger());
+		// CustomerManager customerManager = new CustomerManager(new SmsLogger());
 		
 		Logger[] loggers = {new EmailLogger(), new FileLogger(), new SmsLogger()};
 		CustomerManager customerManager = new CustomerManager(loggers);
