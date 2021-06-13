@@ -1,13 +1,13 @@
 ```java
-	//Primitive datatypes
-		boolean flag = true; 	// true ya da false değer alır. 8 bitlik yer kaplar.
-		char letter = 'A';  	// unicode karakterleri tutan değişken tipidir. 16 bitlik yer kaplar.
-		byte num1 = 5; 			// -128 ile 127 arasındaki tamsayı değerleri alan değişken tipidir. 8 bitlik yer kaplar.
-		short num2 = 167; 		// -32768 ile 32767 arasındaki tamsayı değerli alır. 16 bittir.
-		int num3 = 256500; 		// -(2^32)/2 ile ((2^32)/2)-1 arasındaki değerleri alır - 32 bittir.
-		long num4 = 45678900;  	// 64 bittir. -(2^64)/2 ile ((2^64)/2)-1 arasındaki değerleri alır.
-		float num5 = 199.33F;	// kayar noktalı sayıları tutar - 32 bittir.
-		double num6 = 12.5;		// kayar noktalı sayıları tutar - 64 bittir.
+//Primitive datatypes
+boolean flag = true; 	// true ya da false değer alır. 8 bitlik yer kaplar.
+char letter = 'A';  	// unicode karakterleri tutan değişken tipidir. 16 bitlik yer kaplar.
+byte num1 = 5; 			// -128 ile 127 arasındaki tamsayı değerleri alan değişken tipidir. 8 bitlik yer kaplar.
+short num2 = 167; 		// -32768 ile 32767 arasındaki tamsayı değerli alır. 16 bittir.
+int num3 = 256500; 		// -(2^32)/2 ile ((2^32)/2)-1 arasındaki değerleri alır - 32 bittir.
+long num4 = 45678900;  	// 64 bittir. -(2^64)/2 ile ((2^64)/2)-1 arasındaki değerleri alır.
+float num5 = 199.33F;	// kayar noktalı sayıları tutar - 32 bittir.
+double num6 = 12.5;		// kayar noktalı sayıları tutar - 64 bittir.
 
 ```
 
@@ -49,10 +49,12 @@ public class Product {
 /*
 	 sağ click -> source -> generate Getters and Setters
 	 getter ve setter lar bir değişkenin okunabilir mi ya da yazılabilir mi sorularına cevap vermemizi sağlar.
-	 class içindeki değişkenleri direk değiştirmemekte fayda var. Eğer bir değişiklik yapılmak istenirse dolaylı değiştirme işlemi olan
-	 Getter ve Setter fnlarını kullanmak lazım. Neden böyle kullanmamız gerektiğine bir örnek vermek gerekirse 
+	 class içindeki değişkenleri direk değiştirmemekte fayda var. 
+     Eğer bir değişiklik yapılmak istenirse dolaylı değiştirme işlemi olan Getter ve Setter fnlarını kullanmak lazım. 
+     Neden böyle kullanmamız gerektiğine bir örnek vermek gerekirse 
      örneğin bir değişkene 0 ile 10 arası bir değer atansın istiyoruz direk değişiklik ile bu kontrolü yapamayız. 
-     Yazılımcı bunu bilemez ve herhangi bir değer atayabilir. Ancak setter fnu içinde bir kontrol yazarak istenmeyen durumların önüne geçebiliriz.
+     Yazılımcı bunu bilemez ve herhangi bir değer atayabilir. 
+     Ancak setter fnu içinde bir kontrol yazarak istenmeyen durumların önüne geçebiliriz.
 	 Bu yüzden class içindeki değişkenleri private yapmakta fayda var. Dışardan erişilmesini önlemek için.
 */
 	
