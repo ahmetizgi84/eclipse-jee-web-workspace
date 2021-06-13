@@ -1,31 +1,64 @@
 ## Java OOP Giriş
 
-- Nesne, insan zihninin kendisine yöneldiği özellik ve davranışlara sahip, fiziksel olan ya da olmayan herhangi bir olgudur.
 
-- Yazılımda, her tip nesne için, verisi (variables) ile davranışını (methods) bir paket haline getirip sarmalayan (encapsulation) 
-ve adına genelde sınıf (class) denen kalıplar oluşturulur. 
+```java
+public class Selam {
+    public String selamSoyle(String kime){
+        String selamCumlesi = "Selam " + kime;
+        return selamCumlesi;
+    }
+}
+```
 
-    Sınıf = veri + davranış
+- Selam sınıfı şu durumda bir hizmet veriyor. Kime selam söylenmesi gerektiği bilgisi sınıfa verilince
+o kişiye selam söylüyor.
 
-- Nesneler, sınıflardan türetilmiş çalışma zamanı yapılarıdır. 
+```java
+public class Selam {
 
-### Java Nesne Merkezlidir
+    private String world = "Dünya";
 
-- Javada basit veri tipleri hariç herşey, bütün tipler bir nesnedir. 
+    public String selamSoyle(String kime){
+        String selamCumlesi;
+        if(kime != ""){
+            selamCumlesi = "Selam " + kime;
+        }else{
+            selamCumlesi = "Selam " + world;
+        }
+        return selamCumlesi;
+    }
+}
+```
 
-- Çok yönlü kapsülleme (encapsulation) ve bilgi saklama (information hidiing) mekanizmaları vardır.
-
-### Java Yorumlanır
-
-- Java hem derlenen (compiled) hem de yorumlanan (interpreted) bir dildir.
-
-- Platformdan bağımsız olabilmesi için Java kaynak kodları doğrudan makina koduna derlenmez.
-
-- Java kaynak kodları (.java dosyaları) java bytecode'una (.class dosyaları) derlenir.
-
-- Bytecode JVM'in komutlarıdır ve çalışma zamanında (runtime) JVM tarafından yorumlanır.
-
-- JVM ise (Java Virtual Machine) donanım ve işletim sistemi üzerinde çalışan sanal bir platformdur. 
+- Yukarıdaki selam sınıfı ise hem bir hizmet veriyor hem de bir bilgi taşıyor. En basit haliyle bilgiyle (information),
+davranışı (behaviour) bir araya getirip sınıf olarak ifade etmeye kapsülleme (encapsulation) denir.
 
 
-myProgram.java -> compiler (javac) -> myProgram.class (bytecode) -> JVM (JDK içinde geliyor) -> 0101011100
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
